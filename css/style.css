@@ -12,6 +12,10 @@ body {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 .navbar {
   background-color: #FFFFFF;
 }
@@ -28,6 +32,10 @@ body {
           align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.navbar-top__menu-button {
+  display: none;
 }
 
 .navbar__search {
@@ -475,13 +483,12 @@ template {
   .container {
     max-width: 700px;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-  .navbar__search {
-    margin-left: auto;
-    width: 340px;
   }
   .navbar-menu {
     padding: 22px 0;
@@ -490,12 +497,47 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .search {
+    margin-left: auto;
+    width: 340px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .menu-button {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
