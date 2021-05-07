@@ -622,6 +622,9 @@ template {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .navbar__search {
+    margin-left: 47px;
+  }
   .navbar-menu {
     padding: 22px 0;
   }
@@ -629,8 +632,10 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .navbar-menu__list {
+    max-width: 673px;
+  }
   .search {
-    margin-left: auto;
     width: 340px;
   }
 }
