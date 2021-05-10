@@ -518,6 +518,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .hotel-info__offer {
@@ -557,6 +558,59 @@ template {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
+}
+
+.hotel-slider {
+  width: 728px;
+  height: 450px;
+  border-radius: 8px;
+  margin-left: 0;
+  margin-right: 30px;
+  position: relative;
+}
+
+.hotel-slider::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 3;
+}
+
+.hotel-slider__wrapper {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hotel-slider__button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 5;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url("../img/slide-prev.svg");
+}
+
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url("../img/slide-next.svg");
 }
 
 .stars {
@@ -638,6 +692,9 @@ template {
   .search {
     width: 340px;
   }
+  .hotel-slider {
+    width: 700px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -696,6 +753,11 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .hotel-slider {
+    width: 500px;
+    height: 322px;
+    margin: 18px auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -715,6 +777,21 @@ template {
   .hotel-info__stars {
     margin-right: 5px;
     margin-top: 2px;
+  }
+  .hotel-slider {
+    width: 278px;
+    height: 179px;
+  }
+  .hotel-slider__button {
+    width: 12px;
+    height: 12px;
+    background-size: 35%;
+  }
+  .hotel-slider__button--prev {
+    left: 5px;
+  }
+  .hotel-slider__button--next {
+    right: 5px;
   }
   .breadcrumb-list {
     padding: 19px 0;
