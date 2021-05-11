@@ -639,6 +639,7 @@ template {
 .hotel__map {
   width: 347px;
   height: 213px;
+  border-radius: 10px;
 }
 
 .stars {
@@ -796,10 +797,11 @@ template {
   cursor: pointer;
 }
 
-.map {
+#map {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
@@ -933,6 +935,9 @@ template {
     height: 322px;
     margin: 18px auto;
   }
+  .hotel__map {
+    max-width: 48%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -960,7 +965,7 @@ template {
     padding-left: 22px;
   }
   .hotel__map {
-    width: 100%;
+    max-width: 100%;
   }
   .hotel-wrapper {
     padding-right: 10px;
