@@ -10,5 +10,4 @@ const hotelSwiper = new Swiper('.hotel-slider', {
     enabled: true,
     onlyInViewport: true,
   },
-  breakpointsBase: 'container',
 });
