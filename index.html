@@ -8,26 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/style.css">
-<script src="https://api-maps.yandex.ru/2.0-stable/?apikey=99df9c74-a544-4fe9-9e67-2fd7a45880b1&load=package.standard&lang=ru-RU" type="text/javascript"></script>
-<script type="text/javascript">
-        ymaps.ready(init);
-        var myMap, 
-            myPlacemark;
-
-        function init(){ 
-            myMap = new ymaps.Map ("map", {
-                center: [7.838196, 98.298813],
-                zoom: 15
-            }); 
-            
-            myPlacemark = new ymaps.Placemark([7.838196, 98.298813], {
-                hintContent: 'Hotel',
-                balloonContent: 'Grand Hilton Hotel'
-            });
-            
-            myMap.geoObjects.add(myPlacemark);
-        }
-    </script>
 </head>
 <body>
     <header class="navbar">
@@ -200,9 +180,97 @@
         </div>
         <!-- /.newsletter__wrapper -->
     </section>
+    <section class="reviews">
+        <h2 class="reviews__header">What people think about us</h2>
+        <div class="reviews-slider">
+            <div class="swiper-container reviews-slider__container">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper reviews-slider__wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="reviews-slider__slide">
+                                <img class="reviews-slider__img" src="img/review1.jpg" alt="Review: Megan Fox">
+                                <h3 class="reviews-slider__name">Megan Fox</h3>
+                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                <div class="stars reviews-slider__stars">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                </div>
+                                <p class="reviews-slider__text">
+                                    It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <div class="reviews-slider__slide">
+                                <img class="reviews-slider__img" src="img/review2.jpg" alt="Review: Leeroy Jenkins">
+                                <h3 class="reviews-slider__name">Leeroy Jenkins</h3>
+                                <span class="reviews-slider__date">Stayed 11 May, 2005</span>
+                                <div class="stars reviews-slider__stars">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                </div>
+                                <p class="reviews-slider__text">
+                                     OK, uhh well what we’ll do, I’ll run in first, uh…gather up all the eggs. We can kinda just, ya know, blast them all down with AOE. Um, I will use Intimidating Shout to kinda scatter ’em, so we don’t have to fight a whole bunch of them at once. Uhh… when my Shouts are done, I’ll need Anfrony to come in and drop his Shout too, uh… so we can keep them scattered and not to fight too many. Um… when his is done, Bas of course will need to run in and do the same thing. Uh…we’re gonna need Divine Intervention on our mages, uhh so they can AE, uh so we can of course get them down fast, ’cause we’re bringing all these guys. I mean, we’ll be in trouble if we take them down quick. Uhh, I think this is a pretty good plan, we should be able to pull it off this time. Uhh, what do you think Abduhl? Can you give me a number crunch real quick? 
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <div class="reviews-slider__slide">
+                                <img class="reviews-slider__img" src="img/review3.jpg" alt="Review: Megan Fox">
+                                <h3 class="reviews-slider__name">Neil deGrasse Tyson</h3>
+                                <span class="reviews-slider__date">Stayed 25 Jan, 2021</span>
+                                <div class="stars reviews-slider__stars">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                    <img src="img/star.svg" alt="star" class="reviews-slider__star">
+                                </div>
+                                <p class="reviews-slider__text">
+                                    Everything we do understand about the universe - the periodic table of elements, Einstein's laws, Newton's laws, all of chemistry, all of biology - that's 4 percent of the universe. We got to the moon on the 4 percent we do understand. We landed on Mars on the 4 percent we do understand. So the day we crack the nut of the rest of that 95 percent... Oh my gosh. 
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Slide -->
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="reviews-slider__button reviews-slider__button--prev"></div>
+                    <div class="reviews-slider__button reviews-slider__button--next"></div>
+                </div>
+        </div>
+    </section>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=99df9c74-a544-4fe9-9e67-2fd7a45880b1&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map ("map", {
+                center: [7.838196, 98.298813],
+                zoom: 15
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([7.838196, 98.298813], {
+                hintContent: 'Hotel',
+                balloonContent: 'Grand Hilton Hotel'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
 </body>
 </html>

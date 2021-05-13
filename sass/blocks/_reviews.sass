@@ -1,0 +1,91 @@
+.reviews
+    padding: 40px 0 70px 0
+    &__header
+        margin: 0
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 70px
+    &-slider
+        &__container
+            margin: auto
+            width: 1074px
+            min-height: 325px
+            position: relative
+        &__button
+            position: absolute
+            width: 30px
+            height: 30px
+            cursor: pointer
+            top: 41%
+            z-index: 5
+            background-position: center
+            background-repeat: no-repeat
+            &--prev
+                left: 0
+                background-image: url('../img/review-prev.svg')
+            &--next
+                right: 0
+                background-image: url('../img/review-next.svg')
+        &__slide
+            width: 731px
+            min-height: 280px
+            padding: 0 95px 30px 99px
+            border-radius: 8px
+            background-color: $light
+            margin: auto
+            display: flex
+            align-items: center
+            flex-direction: column
+            margin-top: 45px
+            position: relative
+            &::before
+                position: absolute
+                content: ''
+                width: 70px
+                height: 48px
+                background-image: url('../img/quote1.svg')
+                background-repeat: no-repeat
+                top: 13px
+                left: 64px
+            &::after
+                position: absolute
+                content: ''
+                width: 70px
+                height: 48px
+                background-image: url('../img/quote2.svg')
+                background-repeat: no-repeat
+                top: 118px
+                right: 60px
+        &__img
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+            margin-top: -45px
+            margin-bottom: 9px
+        &__name
+            margin: 0
+            margin-bottom: 10px
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: $primary
+        &__date
+            font-weight: normal
+            font-size: 10px
+            line-height: 13px
+            color: black
+            margin-bottom: 5px
+        &__stars
+            width: 48px
+            justify-content: space-between
+            margin-bottom: 33px
+        &__text
+            margin: 0
+            font-weight: normal
+            font-size: 12px
+            line-height: 19px
+            text-align: justify
