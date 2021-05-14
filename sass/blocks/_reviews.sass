@@ -1,13 +1,15 @@
 .reviews
     padding: 40px 0 70px 0
     &__header
-        margin: 0
+        margin: 0 auto
         font-weight: bold
         font-size: 36px
         line-height: 45px
         text-align: center
         text-transform: uppercase
         margin-bottom: 70px
+        max-width: 70%
+        word-wrap: break-word
     &-slider
         &__container
             margin: auto
@@ -19,7 +21,7 @@
             width: 30px
             height: 30px
             cursor: pointer
-            top: 41%
+            top: 35%
             z-index: 5
             background-position: center
             background-repeat: no-repeat
@@ -73,16 +75,22 @@
             font-size: 12px
             line-height: 15px
             color: $primary
+            max-width: 50%
+            word-wrap: break-word
         &__date
             font-weight: normal
             font-size: 10px
             line-height: 13px
             color: black
             margin-bottom: 5px
+            max-width: 50%
+            word-wrap: break-word
         &__stars
             width: 48px
             justify-content: space-between
             margin-bottom: 33px
+            max-width: 50%
+            word-wrap: break-word
         &__text
             margin: 0
             font-weight: normal

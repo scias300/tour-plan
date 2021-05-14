@@ -843,6 +843,7 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  max-width: 100%;
 }
 
 .newsletter__heading {
@@ -851,6 +852,12 @@ template {
   line-height: 45px;
   text-transform: uppercase;
   display: block;
+  max-width: 100%;
+}
+
+.newsletter__text {
+  max-width: 42%;
+  word-wrap: break-word;
 }
 
 .subscribe {
@@ -876,13 +883,15 @@ template {
   top: 0;
   right: 0;
   border: none;
-  width: 65px;
+  padding: 0 18px;
+  max-width: 40%;
   height: 100%;
   color: #FFFFFF;
   cursor: pointer;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  overflow: hidden;
 }
 
 .reviews {
@@ -890,13 +899,15 @@ template {
 }
 
 .reviews__header {
-  margin: 0;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  max-width: 70%;
+  word-wrap: break-word;
 }
 
 .reviews-slider__container {
@@ -911,7 +922,7 @@ template {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  top: 41%;
+  top: 35%;
   z-index: 5;
   background-position: center;
   background-repeat: no-repeat;
@@ -987,6 +998,8 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
+  max-width: 50%;
+  word-wrap: break-word;
 }
 
 .reviews-slider__date {
@@ -995,6 +1008,8 @@ template {
   line-height: 13px;
   color: black;
   margin-bottom: 5px;
+  max-width: 50%;
+  word-wrap: break-word;
 }
 
 .reviews-slider__stars {
@@ -1003,6 +1018,8 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 33px;
+  max-width: 50%;
+  word-wrap: break-word;
 }
 
 .reviews-slider__text {
@@ -1281,6 +1298,9 @@ template {
   }
   .newsletter__heading {
     margin-bottom: 37px;
+  }
+  .newsletter__text {
+    min-width: 100%;
   }
   .subscribe__input {
     padding-left: 20px;
