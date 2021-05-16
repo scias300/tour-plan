@@ -27,7 +27,7 @@
             width: 339px
     .packages
         &__wrapper
-            grid-template: repeat(2, 500px) / repeat(2, 1fr)
+            grid-template: repeat(3, 500px) / repeat(2, 1fr)
 @media (max-width: 992px)
     .container
         max-width: 700px
@@ -161,13 +161,12 @@
             width: 280px
     .packages
         &__wrapper
-            grid-template-rows: repeat (5, 500px)
+            grid-template-rows: repeat (4, 500px)
             grid-template-columns: 1fr
         &__item
-            &:nth-child(2n-1)
+            height: 500px
+            &--main
                 display: none
-        &__text
-            display: none
 @media (max-width: 576px)
     .logo
         width: 99px
