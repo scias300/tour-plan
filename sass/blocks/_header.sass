@@ -6,8 +6,12 @@
         align-items: center
         padding-top: 40px
         padding-bottom: 40px
-        &__menu-button
-            display: none
+    &--fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
     &__search
         margin-right: auto
         margin-left: 108px
@@ -29,6 +33,43 @@
             font-size: 14px
             line-height: 18px
             font-weight: 700
+    &-mobile
+        visibility: hidden
+        position: fixed
+        top: 69px
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        background-color: $dark
+        padding: 31px 37px 68px 38px
+        &__user
+            display: flex
+            flex-direction: column
+            align-items: center
+            height: 68px
+            justify-content: space-between
+            margin-bottom: 27px
+        &__search
+            margin-bottom: 39px
+            max-width: 340px
+            height: 40px
+            position: relative
+            overflow: hidden
+            border-radius: 6px
+        &-menu
+            &__list
+                padding: 0
+                margin: 0
+                display: flex
+                flex-direction: column
+                align-items: center
+                list-style: none
+                height: 230px
+                justify-content: space-between
+        &--visible
+            visibility: visible
+            z-index: 99
 .logo
     width: 177px
 .search
@@ -68,3 +109,8 @@
         line-height: 18px
         color: $font-color
         margin-left: 18px
+        &--mobile
+            color: $light
+            margin: 0
+.menu-button
+    display: none

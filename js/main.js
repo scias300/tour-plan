@@ -24,3 +24,14 @@ const reviewsSwiper = new Swiper('.reviews-slider__container', {
     onlyInViewport: true,
   },
 });
+
+var menuButton = document.querySelector(".menu-button");
+var menuVisible = document.querySelector(".navbar-mobile");
+var menuFixed = document.querySelector(".navbar");
+var bread = document.querySelector(".breadcrumb");
+
+menuButton.addEventListener('click', function(){
+  menuVisible.classList.toggle('navbar-mobile--visible');
+  menuFixed.classList.toggle('navbar--fixed');
+  bread.classList.toggle('breadcrumb--padding');
+});
