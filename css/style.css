@@ -2272,7 +2272,7 @@ template {
 @media (max-height: 500px) {
   .navbar-mobile {
     overflow: scroll;
-    height: 100%;
+    height: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
