@@ -57,6 +57,23 @@
             position: relative
             overflow: hidden
             border-radius: 6px
+        &__input
+            padding: 12px 88px 12px 23px
+            width: 100%
+            border: none
+            background-color: #F5FAFE
+            outline: none
+            font-size: 12px
+            line-height: 15px
+            color: $font-color
+        &__button
+            background-color: $primary
+            position: absolute
+            top: 0
+            right: 0
+            border: none
+            width: 65px
+            height: 100%
         &-menu
             &__list
                 padding: 0
@@ -67,6 +84,13 @@
                 list-style: none
                 height: 230px
                 justify-content: space-between
+            &__link
+                color: $light
+                text-decoration: none
+                text-transform: uppercase
+                font-size: 12px
+                line-height: 15px
+                font-weight: bold
         &--visible
             visibility: visible
             z-index: 99

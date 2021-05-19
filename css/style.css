@@ -473,6 +473,27 @@ template {
   border-radius: 6px;
 }
 
+.navbar-mobile__input {
+  padding: 12px 88px 12px 23px;
+  width: 100%;
+  border: none;
+  background-color: #F5FAFE;
+  outline: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+}
+
+.navbar-mobile__button {
+  background-color: #EC1F46;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  width: 65px;
+  height: 100%;
+}
+
 .navbar-mobile-menu__list {
   padding: 0;
   margin: 0;
@@ -491,6 +512,15 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.navbar-mobile-menu__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
 }
 
 .navbar-mobile--visible {
