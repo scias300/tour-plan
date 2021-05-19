@@ -35,3 +35,13 @@ menuButton.addEventListener('click', function(){
   menuFixed.classList.toggle('navbar--fixed');
   bread.classList.toggle('breadcrumb--padding');
 });
+
+
+
+window.addEventListener("resize", function() {
+    if (window.innerWidth > 768) {
+  menuVisible.classList.remove('navbar-mobile--visible');
+  menuFixed.classList.remove('navbar--fixed');
+  bread.classList.remove('breadcrumb--padding');
+}
+    }, false);

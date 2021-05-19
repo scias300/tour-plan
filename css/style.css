@@ -457,7 +457,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 68px;
+  min-height: 68px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -467,7 +467,7 @@ template {
 .navbar-mobile__search {
   margin-bottom: 39px;
   max-width: 340px;
-  height: 40px;
+  min-height: 40px;
   position: relative;
   overflow: hidden;
   border-radius: 6px;
@@ -2266,6 +2266,13 @@ template {
   }
   .footer__message {
     margin-bottom: 15px;
+  }
+}
+
+@media (max-height: 500px) {
+  .navbar-mobile {
+    overflow: scroll;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
