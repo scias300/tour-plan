@@ -48,13 +48,15 @@ window.addEventListener("resize", function() {
 
 var modalWindow = document.querySelector(".modal__window");
 var modalOverlay = document.querySelector(".modal__overlay");
-var modalOpen = document.querySelector(".modal-open");
+var modalOpen = document.querySelectorAll(".modal-open");
 var modalClose = document.querySelector(".modal__close");
 
-modalOpen.addEventListener('click', function(){
+for (var i = 0; i < modalOpen.length; i++){
+  modalOpen[i].addEventListener('click', function(){
   modalWindow.classList.add('modal__window--visible');
   modalOverlay.classList.add('modal__overlay--visible');
 });
+}
 
 modalClose.addEventListener('click', function(evt){
   evt.preventDefault();
