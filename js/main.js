@@ -45,3 +45,27 @@ window.addEventListener("resize", function() {
   bread.classList.remove('breadcrumb--padding');
 }
     }, false);
+
+var modalWindow = document.querySelector(".modal__window");
+var modalOverlay = document.querySelector(".modal__overlay");
+var modalOpen = document.querySelector(".modal-open");
+var modalClose = document.querySelector(".modal__close");
+
+modalOpen.addEventListener('click', function(){
+  modalWindow.classList.add('modal__window--visible');
+  modalOverlay.classList.add('modal__overlay--visible');
+});
+
+modalClose.addEventListener('click', function(evt){
+  evt.preventDefault();
+  modalWindow.classList.remove('modal__window--visible');
+  modalOverlay.classList.remove('modal__overlay--visible');
+});
+
+document.addEventListener('keyup', function(event){
+    if (event.keyCode == '27'){
+      event.preventDefault();
+      modalWindow.classList.remove('modal__window--visible');
+      modalOverlay.classList.remove('modal__overlay--visible');
+    }
+});
