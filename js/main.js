@@ -89,7 +89,6 @@ $(".modal__form").validate({
       email: "Example: name@domain.com"
     }
   },
-  focusCleanup: true,
 });
 
 $(".newsletter__subscribe").validate({
@@ -99,8 +98,7 @@ $(".newsletter__subscribe").validate({
       email: "Example: name@domain.com"
     },
   },
-  focusCleanup: true,
-   errorClass: "invalid",
+  errorClass: "invalid",
 });
 
 $(".footer__form").validate({
@@ -114,7 +112,6 @@ $(".footer__form").validate({
       minlength: "Please enter valid number",
     },
   },
-  focusCleanup: true,
 });
 
 $('.phone_us').mask('+7 (999) 999-99-99');

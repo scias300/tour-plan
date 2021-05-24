@@ -152,9 +152,9 @@
                 <!-- /.footer__contact -->
                 <div class="footer__send">
                     <h3 class="footer__header">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer__form">
-                        <input type="text" class="footer__input" placeholder="Your Full Name*" name="name">
-                        <input type="text" class="footer__input" placeholder="Phone Number*" name="phone">
+                   <form action="send.php" method="POST" class="footer__form">
+                        <div class="footer__field"><input type="text" class="footer__input" placeholder="Your Full Name*" name="name" required minlength="2"></div>
+                        <div class="footer__field"><input type="tel" class="footer__input phone-us" placeholder="Phone Number*" name="phone" required minlength="18"></div>
                         <textarea cols="30" rows="10" class="footer__message" placeholder="Message" name="message"></textarea>
                         <button type="submit" class="footer__button">Send</button>
                         <span class="footer__required">* Required Fields</span>
