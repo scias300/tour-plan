@@ -230,6 +230,7 @@
     .modal
         &__window
             padding: 30px 50px
+            width: 60%
         &__form
             flex-direction: column
         &__required
@@ -239,6 +240,8 @@
             order: 2
         &__message
             height: 123px
+    label.error
+        top: 48%
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -382,7 +385,7 @@
             margin-top: 18px
         &__form
             margin: 0
-        &__input
+        &__field
             flex-basis: 100%
         &__button
             order: 2
@@ -393,8 +396,9 @@
             margin-bottom: 15px
     .modal
         &__window
+            width: 87%
             padding: 30px 40px
-            max-width: 87%
+            max-width: 360px
         &__input
             padding-top: 10px
             padding-bottom: 10px

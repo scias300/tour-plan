@@ -1,3 +1,4 @@
+$(document).ready(function(){
 const hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
@@ -71,3 +72,50 @@ document.addEventListener('keyup', function(event){
       modalOverlay.classList.remove('modal__overlay--visible');
     }
 });
+});
+
+$(".modal__form").validate({
+  messages: {
+    name:{
+      required: "Please specify your name",
+      minlength: "Please enter at least 2 characters",
+    },
+    phone: {
+      required: "Please specify your phone",
+      minlength: "Please enter valid number",
+    },
+    email: {
+      required: "Please specify your email",
+      email: "Example: name@domain.com"
+    }
+  },
+  focusCleanup: true,
+});
+
+$(".newsletter__subscribe").validate({
+  messages: {
+    email: {
+      required: "Please specify your email",
+      email: "Example: name@domain.com"
+    },
+  },
+  focusCleanup: true,
+   errorClass: "invalid",
+});
+
+$(".footer__form").validate({
+  messages: {
+    name:{
+      required: "Please specify your name",
+      minlength: "Please enter at least 2 characters",
+    },
+    phone: {
+      required: "Please specify your phone",
+      minlength: "Please enter valid number",
+    },
+  },
+  focusCleanup: true,
+});
+
+$('.phone_us').mask('+7 (999) 999-99-99');
+$('.phone-us').mask('+7 (999) 999-99-99');
