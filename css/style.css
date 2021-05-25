@@ -7,6 +7,19 @@ body {
   font-family: 'Mulish', sans-serif;
   color: #333333;
   background-color: #F5FAFE;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
