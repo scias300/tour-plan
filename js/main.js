@@ -72,6 +72,9 @@ document.addEventListener('keyup', function(event){
       modalOverlay.classList.remove('modal__overlay--visible');
     }
 });
+
+AOS.init();
+
 });
 
 $(".modal__form").validate({

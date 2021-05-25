@@ -1789,6 +1789,10 @@ label.invalid {
 .modal__overlay--visible {
   visibility: visible;
   opacity: 1;
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 .modal__window {
@@ -1808,6 +1812,12 @@ label.invalid {
 .modal__window--visible {
   visibility: visible;
   opacity: 1;
+  -webkit-animation-name: show, bounce;
+          animation-name: show, bounce;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 .modal__header {
@@ -1932,6 +1942,54 @@ label.invalid {
 
 .modal-open {
   outline: none;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 30%;
+  }
+  70% {
+    top: 50.5%;
+  }
+  90% {
+    top: 49.5%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 30%;
+  }
+  70% {
+    top: 50.5%;
+  }
+  90% {
+    top: 49.5%;
+  }
+  100% {
+    top: 50%;
+  }
 }
 
 @media (max-width: 1200px) {

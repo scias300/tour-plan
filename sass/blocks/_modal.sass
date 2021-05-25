@@ -11,6 +11,8 @@
         &--visible
             visibility: visible
             opacity: 1
+            animation-name: show
+            animation-duration: 0.3s
     &__window
         max-width: 478px
         padding: 33px 88px
@@ -25,6 +27,9 @@
         &--visible
             visibility: visible
             opacity: 1
+            animation-name: show, bounce
+            animation-duration: 0.3s
+            animation-timing-function: ease-out
     &__header
         font-weight: bold
         font-size: 18px
@@ -96,3 +101,21 @@
         width: 100%
 .modal-open
     outline: none
+
+@keyframes show
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+@keyframes bounce
+    0%
+        top: 30%
+
+    70%
+        top: 50.5%
+
+    90%
+        top: 49.5%
+
+    100%
+        top: 50%
