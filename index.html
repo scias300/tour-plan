@@ -18,7 +18,7 @@
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
                 <form action="#" class="search navbar__search">
-                    <input type="text" class="search__input" placeholder="Search Location">
+                    <input type="text" class="search__input" placeholder="Search Location" autofocus>
                     <button class="search__button">
                         <img src="img/search.svg" alt="Icon: search">
                     </button>
@@ -126,19 +126,39 @@
                     <div class="swiper-wrapper hotel-slider__wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide hotel-slider__slide">
-                            <img class="hotel-slider__img" src="img/slide1.jpg" alt="slide 1">
+                            <picture class="hotel-slider__img">
+                                <source srcset="img/slide1.jpg" type="image/jpg" media="(min-width: 576px)">
+                                <source srcset="img/mobile/slide1.jpg" type="image/jpg" media="(max-width: 576px)">
+                                <img src="img/slide1.jpg" alt="slide 1">
+                            </picture>
                         </div>
                         <div class="swiper-slide hotel-slider__slide">
-                            <img class="hotel-slider__img" src="img/slide2.jpg" alt="slide 2">
+                            <picture class="hotel-slider__img">
+                                <source srcset="img/slide2.jpg" type="image/jpg" media="(min-width: 576px)">
+                                <source srcset="img/mobile/slide2.jpg" type="image/jpg" media="(max-width: 576px)">
+                                <img src="img/slide2.jpg" alt="slide 2">
+                            </picture>
                         </div>
                         <div class="swiper-slide hotel-slider__slide">
-                            <img class="hotel-slider__img" src="img/slide3.jpg" alt="slide 3">
+                            <picture class="hotel-slider__img">
+                                <source srcset="img/slide3.jpg" type="image/jpg" media="(min-width: 576px)">
+                                <source srcset="img/mobile/slide3.jpg" type="image/jpg" media="(max-width: 576px)">
+                                <img src="img/slide3.jpg" alt="slide 3">
+                            </picture>
                         </div>
                         <div class="swiper-slide hotel-slider__slide">
-                            <img class="hotel-slider__img" src="img/slide4.jpg" alt="slide 4">
+                            <picture class="hotel-slider__img">
+                                <source srcset="img/slide4.jpg" type="image/jpg" media="(min-width: 576px)">
+                                <source srcset="img/mobile/slide4.jpg" type="image/jpg" media="(max-width: 576px)">
+                                <img src="img/slide4.jpg" alt="slide 4">
+                            </picture>
                         </div>
                         <div class="swiper-slide hotel-slider__slide">
-                            <img class="hotel-slider__img" src="img/slide5.jpg" alt="slide 5">
+                            <picture class="hotel-slider__img">
+                                <source srcset="img/slide5.jpg" type="image/jpg" media="(min-width: 576px)">
+                                <source srcset="img/mobile/slide5.jpg" type="image/jpg" media="(max-width: 576px)">
+                                <img src="img/slide5.jpg" alt="slide 5">
+                            </picture>
                         </div>
                     </div>
                     <!-- If we need navigation buttons -->
@@ -191,7 +211,11 @@
             <h2 class="packages__header">Other Packages</h2>
             <div class="packages__wrapper">
                 <div class="packages__item packages__item--main" data-aos="zoom-in-right">
-                    <img src="img/package1.jpg" alt="" class="packages__photo packages__photo--main">
+                    <picture class="packages__photo packages__photo--main">
+                        <source srcset="img/package1.jpg" type="image/jpg" media="(min-width: 576px)">
+                        <source srcset="img/mobile/package1.jpg" type="image/jpg" media="(max-width: 576px)">
+                        <img src="img/package1.jpg" alt="" class="packages__image">
+                    </picture>
                     <div class="packages__options-block">
                         <div class="stars packages__stars">
                             <img src="img/star.svg" alt="star" class="packages__star">
@@ -212,7 +236,11 @@
                 </div>
                 <!-- /.packages__item -->
                 <div class="packages__item" data-aos="fade-up">
-                    <img src="img/package2.jpg" alt="" class="packages__photo">
+                    <picture class="packages__photo">
+                        <source srcset="img/package2.jpg" type="image/jpg" media="(min-width: 576px)">
+                        <source srcset="img/mobile/package2.jpg" type="image/jpg" media="(max-width: 576px)">
+                        <img src="img/package2.jpg" alt="" class="packages__image">
+                    </picture>
                     <div class="packages__description">
                         <h3 class="packages__name">LUX* Belle Mare</h3>
                         <span class="packages__options packages__options--one">1749 Wheeler Ridge  Delaware</span>
@@ -225,7 +253,11 @@
                 </div>
                 <!-- /.packages__item -->
                 <div class="packages__item" data-aos="fade-up">
-                    <img src="img/package3.jpg" alt="" class="packages__photo">
+                    <picture class="packages__photo">
+                        <source srcset="img/package3.jpg" type="image/jpg" media="(min-width: 576px)">
+                        <source srcset="img/mobile/package3.jpg" type="image/jpg" media="(max-width: 576px)">
+                        <img src="img/package3.jpg" alt="" class="packages__image">
+                    </picture>
                     <div class="packages__description">
                         <h3 class="packages__name">White Palace</h3>
                         <span class="packages__options packages__options--one">1749 Wheeler Ridge  Delaware</span>
@@ -238,7 +270,11 @@
                 </div>
                 <!-- /.packages__item -->
                 <div class="packages__item" data-aos="fade-up">
-                    <img src="img/package4.jpg" alt="" class="packages__photo">
+                    <picture class="packages__photo">
+                        <source srcset="img/package4.jpg" type="image/jpg" media="(min-width: 576px)">
+                        <source srcset="img/mobile/package4.jpg" type="image/jpg" media="(max-width: 576px)">
+                        <img src="img/package4.jpg" alt="" class="packages__image">
+                    </picture>
                     <div class="packages__description">
                         <h3 class="packages__name">Luxury Place</h3>
                         <span class="packages__options packages__options--one">1749 Wheeler Ridge  Delaware</span>
@@ -251,7 +287,11 @@
                 </div>
                 <!-- /.packages__item -->
                 <div class="packages__item" data-aos="fade-up">
-                    <img src="img/package5.jpg" alt="" class="packages__photo">
+                    <picture class="packages__photo">
+                        <source srcset="img/package5.jpg" type="image/jpg" media="(min-width: 576px)">
+                        <source srcset="img/mobile/package5.jpg" type="image/jpg" media="(max-width: 576px)">
+                        <img src="img/package5.jpg" alt="" class="packages__image">
+                    </picture>
                     <div class="packages__description">
                         <h3 class="packages__name">Hotel Five Star</h3>
                         <span class="packages__options packages__options--one">1749 Wheeler Ridge  Delaware</span>
@@ -426,9 +466,9 @@
                 <div class="footer__social">
                     <h3 class="footer__header">Social Network</h3>
                     <div class="footer__social-links">
-                        <a href="https://www.facebook.com/" class="footer__social-link"><img src="img/fb.svg" alt="facebook" class="footer__social-icon"></a>
-                        <a href="https://www.youtube.com/" class="footer__social-link"><img src="img/yt.svg" alt="youtube" class="footer__social-icon"></a>
-                        <a href="https://www.instagram.com/" class="footer__social-link"><img src="img/inst.svg" alt="instagram" class="footer__social-icon"></a>
+                        <a href="https://www.facebook.com/" class="footer__social-link"><img src="img/fb.svg" alt="facebook" class="footer__social-icon footer__social-icon--fb"></a>
+                        <a href="https://www.youtube.com/" class="footer__social-link"><img src="img/yt.svg" alt="youtube" class="footer__social-icon footer__social-icon--yt"></a>
+                        <a href="https://www.instagram.com/" class="footer__social-link"><img src="img/inst.svg" alt="instagram" class="footer__social-icon footer__social-icon--inst"></a>
                     </div>
                     <!-- /.footer__social-links -->
                 </div>
@@ -443,7 +483,7 @@
                             <span class="footer__br">Tel (hotline) Monday - Saturday: </span> <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 20:00 pm)<br>
                             Tel (hotline) Sunday: <a href="tel:52566138" class="footer__link">52-56-61-38</a> (08:00 am – 14:00 pm)
                         </li>
-                        <li class="footer__item footer__item--contact"><a href="mailto:lawson@example.com" class="footer__link"><img src="img/email-icon.svg" alt="email icon" class="footer__contact-icon">cherly.lawson@example.com</a></li>
+                        <li class="footer__item footer__item--contact"><img src="img/email-icon.svg" alt="email icon" class="footer__contact-icon"><a href="mailto:lawson@example.com" class="footer__link">cherly.lawson@example.com</a></li>
                     </ul>
                 </div>
                 <!-- /.footer__contact -->
