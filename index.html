@@ -308,10 +308,10 @@
     </section>
     <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
         <div class="newsletter__wrapper">
-            <div class="newsletter__text" data-aos="fade-right">
+            <h2 class="newsletter__text" data-aos="fade-right">
                 <span class="newsletter__label">subscribe to our</span>
                 <strong class="newsletter__heading">Newsletter</strong>
-            </div>
+            </h2>
             <!-- /.newsletter__text -->
             <form action="send.php" method="POST" class="subscribe newsletter__subscribe" data-aos="fade-left">
                     <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
@@ -323,7 +323,7 @@
         <!-- /.newsletter__wrapper -->
     </section>
     <section class="reviews">
-        <h2 class="reviews__header">What people think about us</h2>
+        <h2 class="reviews__header">What people think about&nbsp;us</h2>
         <div class="reviews-slider" data-aos="zoom-in">
             <div class="swiper-container reviews-slider__container">
                 <!-- Additional required wrapper -->
@@ -466,9 +466,9 @@
                 <div class="footer__social">
                     <h3 class="footer__header">Social Network</h3>
                     <div class="footer__social-links">
-                        <a href="https://www.facebook.com/" class="footer__social-link"><img src="img/fb.svg" alt="facebook" class="footer__social-icon footer__social-icon--fb"></a>
-                        <a href="https://www.youtube.com/" class="footer__social-link"><img src="img/yt.svg" alt="youtube" class="footer__social-icon footer__social-icon--yt"></a>
-                        <a href="https://www.instagram.com/" class="footer__social-link"><img src="img/inst.svg" alt="instagram" class="footer__social-icon footer__social-icon--inst"></a>
+                        <a href="https://www.facebook.com/" class="footer__social-link" target="_blank"><img src="img/fb.svg" alt="facebook" class="footer__social-icon footer__social-icon--fb"></a>
+                        <a href="https://www.youtube.com/" class="footer__social-link" target="_blank"><img src="img/yt.svg" alt="youtube" class="footer__social-icon footer__social-icon--yt"></a>
+                        <a href="https://www.instagram.com/" class="footer__social-link" target="_blank"><img src="img/inst.svg" alt="instagram" class="footer__social-icon footer__social-icon--inst"></a>
                     </div>
                     <!-- /.footer__social-links -->
                 </div>
@@ -537,8 +537,8 @@
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=99df9c74-a544-4fe9-9e67-2fd7a45880b1&load=package.standard&lang=ru-RU" type="text/javascript"></script>
-    <script type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=99df9c74-a544-4fe9-9e67-2fd7a45880b1&load=package.standard&lang=ru-RU"></script>
+    <script>
         ymaps.ready(init);
         var myMap, 
             myPlacemark;

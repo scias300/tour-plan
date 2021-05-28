@@ -24,6 +24,7 @@ const reviewsSwiper = new Swiper('.reviews-slider__container', {
     enabled: true,
     onlyInViewport: true,
   },
+  autoHeight: true,
 });
 
 var menuButton = document.querySelector(".menu-button");
